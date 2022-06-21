@@ -4,8 +4,8 @@
 
     ?>
  <div class="well well-sm text-right">
-     <a class="btn btn-primary" href="?c=Cliente&a=Index">Seccion Clientes</a>
-     <a class="btn btn-primary" href="?c=Equipo&a=Index">Seccion Equipos</a>
+     <a class="btn btn-primary" href="?c=Cliente&a=Index">Gestionar Clientes</a>
+     <a class="btn btn-primary" href="?c=Equipo&a=Index">Gestionar Equipos</a>
      <a class="btn btn-primary" href="?c=Proveedor&a=Mostrar">Ver Proveedores</a>
      <a class="btn btn-primary" href="?c=Lista&a=Mostrar">Ver Lista</a>
 
