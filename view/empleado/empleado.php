@@ -1,11 +1,13 @@
 <h4 align="right"><a href="?c=Usuario&a=Index">Cerrar Sesion</a></h4>
 
-<h1 class="page-header"> 
+<h1 class="page-header">
     <div class="well well-sm text-right">
-    <a class="btn btn-primary" href="?c=Proveedor&a=Index">Seccion Proveedor</a>
-    <a class="btn btn-primary" href="?c=Lista&a=Index">Seccion Lista</a>
-</div>
-<p align="left"> Registro de Empleados</p>
+        <a class="btn btn-primary" href="?c=Proveedor&a=Index">Gestionar Proveedores</a>
+        <a class="btn btn-primary" href="?c=Lista&a=Index">Gestionar Lista</a>
+        <a class="btn btn-primary" href="?c=Cliente&a=Index">Gestionar Clientes</a>
+        <a class="btn btn-primary" href="?c=Equipo&a=Index">Gestionar Equipos</a>
+    </div>
+    <p align="left"> Registro de Empleados</p>
 </h1>
 
 <div class="well well-sm text-right">
@@ -27,7 +29,7 @@
         </tr>
     </thead>
     <tbody>
-        <?php foreach($this->model->Listar() as $r): ?>
+        <?php foreach ($this->model->Listar() as $r) : ?>
             <tr>
                 <td><?php echo $r->pNombre; ?></td>
                 <td><?php echo $r->pApellido; ?></td>
@@ -41,7 +43,7 @@
                     <a onclick="javascript:return confirm('¿Seguro de eliminar este registro?');" href="?c=Empleado&a=Eliminar&id=<?php echo $r->idEmpleado; ?>">Eliminar</a>
                 </td>
             </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table> 
-    <br>
+        <?php endforeach; ?>
+    </tbody>
+</table>
+<br>

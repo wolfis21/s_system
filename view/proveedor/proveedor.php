@@ -2,14 +2,16 @@
 
 <h1 class="page-header">
     <div class="well well-sm text-right">
-        <a class="btn btn-primary" href="?c=Empleado&a=Index">Seccion Empleados</a>
-        <a class="btn btn-primary" href="?c=Lista&a=Index">Seccion Lista</a>
-        <p align="left"> Registro de Proveedores </p>
+        <a class="btn btn-primary" href="?c=Empleado&a=Index">Gestionar Empleados</a>
+        <a class="btn btn-primary" href="?c=Lista&a=Index">Gestionar Lista</a>
+        <a class="btn btn-primary" href="?c=Cliente&a=Index">Gestionar Clientes</a>
+        <a class="btn btn-primary" href="?c=Equipo&a=Index">Gestionar Equipos</a>
     </div>
+    <p align="left"> Registro de Proveedores </p>
 </h1>
 
 <div class="well well-sm text-right">
-<!--quitar el ver mas, esta rebundante 
+    <!--quitar el ver mas, esta rebundante 
     <a class="btn btn-primary" href="?c=Proveedor&a=Mostrar">Ver mas detalles</a> -->
     <a class="btn btn-primary" href="?c=Proveedor&a=Crud">Nuevo Proveedor</a>
 </div>
@@ -27,7 +29,7 @@
         </tr>
     </thead>
     <tbody>
-        <?php foreach($this->model->Listar() as $r): ?>
+        <?php foreach ($this->model->Listar() as $r) : ?>
             <tr>
                 <td><?php echo $r->idProveedores; ?></td>
                 <td><?php echo $r->nombre_empre; ?></td>
@@ -37,12 +39,12 @@
                 <td>
                     <a href="?c=Proveedor&a=Crud&idProveedores=<?php echo $r->idProveedores; ?>">Editar</a>
                 </td>
-                <!-- <td>
-                    arreglar el eliminar 
-                    <a onclick="javascript:return confirm('¿Seguro de eliminar este registro?');" href="?c=Proveedor&a=Eliminar&idProveedores=<?php echo $r->$idProveedores; ?>">Eliminar</a>
-                </td> -->
+                <td>
+                    <!-- arreglar el eliminar -->
+                    <a onclick="javascript:return confirm('¿Seguro de eliminar este registro?');" href="?c=Proveedor&a=Eliminar&idProveedores=<?php echo $r->idProveedores; ?>">Eliminar</a>
+                </td>
             </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table> 
-    <br>
+        <?php endforeach; ?>
+    </tbody>
+</table>
+<br>
