@@ -1,0 +1,11 @@
+combinar los roles:
+
+1) gerente-tecnico = con los casos de uso del tecnico y con los casos de uso del gerente 
+    *control total en borrado de clientes, equipos, revisiones...
+        (implementar nuevas vistas con estas funciones)
+
+2) tecnico - solo con los casos de uso del tecnico con sus restricciones que ya estan 
+
+3) administrador = queda igual
+
+correciones en interfaz de usuarioo a mejorar
