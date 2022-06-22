@@ -7,8 +7,8 @@ require_once 'view/header.php';
     <a class="btn btn-primary" href="?c=Empleado&a=Index">Gestionar Empleados</a>
     <a class="btn btn-primary" href="?c=Proveedor&a=Index">Gestionar Proveedores</a>
     <a class="btn btn-primary" href="?c=Lista&a=Index">Gestionar Lista</a>  
-    <a class="btn btn-primary" href="?c=Cliente&a=Index">Gestionar Clientes</a>
-     <a class="btn btn-primary" href="?c=Equipo&a=Index">Gestionar Equipos</a>
+    <a class="btn btn-primary" href="?c=Cliente&a=Index2">Gestionar Clientes</a>
+     <a class="btn btn-primary" href="?c=Equipo&a=Index2">Gestionar Equipos</a>
 </div>
 <h1 class="page-header"> GERENTE </h1>
 <?php

@@ -17,6 +17,11 @@ class EquipoController{
         require_once 'view/equipo_v/equipo_vista.php';
         require_once 'view/footer.php';
     }
+    public function Index2(){
+        require_once 'view/header.php';
+        require_once 'view/equipo_v/equipo_vistaExt.php';
+        require_once 'view/footer.php';
+    }
     
     public function Crud(){
         $equi = new Equipo();
@@ -126,6 +131,13 @@ class EquipoController{
         
         require_once 'view/header.php';
         require_once 'view/equipo_v/equipo_vista.php';
+        require_once 'view/equipo_v/footer.php';
+    }
+    public function Eliminar2(){
+        $this->model->Eliminar($_REQUEST['idEquipo']);
+        
+        require_once 'view/header.php';
+        require_once 'view/equipo_v/equipo_vistaExt.php';
         require_once 'view/equipo_v/footer.php';
     }
 }
