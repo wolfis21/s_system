@@ -31,6 +31,7 @@
          <?php foreach ($this->model2->Imprimir($rev->idRev_equipo) as $r) : ?>
             <tr>
                <h3 class="page-header">Tecnico</h3>
+
                <div class="form-group">
                   <label>Cedula: </label>
                   <td><?php echo $r->Cedula; ?></td>

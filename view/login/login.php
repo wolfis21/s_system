@@ -1,166 +1,125 @@
 <html>
-<head>
-    <title>LOGIN</title>
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-     <!-- <link rel="stylesheet" href="assets/css/vaidroll.css" />	 -->
+<head>
+  <title>LOGIN</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <style>
-  *
-{
-	box-sizing: border-box;
-	font-family: sans-serif;
-	color:black;
-	
-}
-body
-{
-	margin: 0;
+  * {
+    margin: 0;
     padding: 0;
-	background: #d5ffff; 
-}
-.cajafuera
-{
- width: 100%;
-    height: 100%;
-    display: grid;
-background: #f2f2f2;
+    box-sizing: border-box;
+  }
 
-}
-.formulariocaja
-{
-	background-color: #f3f3f3;
+  body {
+    font-family: arial;
+    background-image: url('assets/img/bg.png');
+  }
+
+  .form-login {
     width: 400px;
-    height: auto;
-    position: relative;
+    height: 340px;
+    background: #4e4d4d;
     margin: auto;
-    padding: 1em;
-	border-radius: 5px;
-	color:white;
-	/* border:0.1em solid black; */
-}
+    margin-top: 180px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: 4px solid #017bab;
+    color: white;
+  }
 
-input 
-{
-	display: block;
-	text-align: left;
-	box-sizing: border-box;
-}
+  .form-login h5 {
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+  }
 
-.cajaentradatexto{
-    width: 80%;
-    padding: 10px;
-	font-size:1em;
-	border-radius:5px;
-	border:1px solid black;
-	color:black;
-	font-weight: bold;
-}
+  .controls {
+    width: 100%;
+    border: 1px solid #017bab;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #252323;
+    font-size: 14px;
+    font-weight: bold;
+  }
 
-.formtitulo
-{
-	font-size:2em;
-	font-weight: bold;
-	padding-bottom:0.8em;
-	color:black;
-}
+  .buttons {
+    width: 100%;
+    height: 40px;
+    background: #017bab;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+  }
 
-a
-{
-	text-decoration: none;
-	cursor:pointer;
-	color:#1A3A83;
-		font-weight: bold;
-}
+  .form-login p {
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid;
+  }
 
-.afcheckbox1
+  .form-login a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .form-login a:hover {
+    text-decoration: underline;
+  }
+  .afcheckbox1
 {
 	margin-top:5%;
 	margin-left:10%;
 }
-.botonenviar
-{
-    width: 80%;
-    padding: 10px 30px;
-    cursor: pointer;
-    display: block;
-    margin-top: 10px;
-    border: 0;
-    outline: none;
-    border-radius: 10px;
-	border:1px solid black;
-	font-size:16px;
-	color:white;
-	background-color: #5dc1b9;
-	text-align:center;
-	margin-top:15%;
-	
-	font-weight: bold;
-}
-
-img
-{
-	width: 150px;
-}
-
-.textoscajas
-{
-	margin-left:8%;
-	font-weight: bold;
-	margin-top:2%;
-	margin-bottom:2%;
-	color:black
-}
 .autor
 {
+  text-align: center;
 	margin-top:5%;
-	color:black;
-}    
+	color:white;
+} 
 </style>
-<body>
-  <div class="cajafuera" align="center">
- 
-<div class="formulariocaja">
-<form method="post" action="?c=Usuario&a=Entrar" name="vaidrollteam">
-<div class="formtitulo">Login</div>
-<div align="left" class="textoscajas">&#128273; Ingresar usuario</div>
-<input type="text" name="nombre" class="cajaentradatexto">
-<div align="left" class="textoscajas">
-&#128274; Ingresar contraseña
-</div>
-<input type="password" name="contraseña" id="password"
- class="cajaentradatexto">
- <div class="afcheckbox1" align="left">
- <div style="float:left;">
- <input type="checkbox" onclick="verpassword()" >
- </div>
- <div style="float:left;">
- Mostrar contraseña
- </div>
- </div>
- 
-<input type="submit" value="Iniciar sesión" class="botonenviar">
 
-</form>
-</div>
-<div class="autor">
-© 2022 Formulario Login. Todos los derechos reservados | Diseño de Isaac Saado 
-<div>
-</div>
+<body>
+
+  <form method="post" action="?c=Usuario&a=Entrar">
+    <section class="form-login">
+      <h5>Ingreso</h5>
+      <input class="controls" type="text" name="nombre" value="" placeholder="Usuario">
+      <input class="controls" type="password" name="contraseña" id="password" value="" placeholder="Contraseña">
+
+      <div class="afcheckbox1" align="left">
+        <div style="float:left;">
+          <input type="checkbox" onclick="verpassword()">
+        </div>
+        <div style="float:left;">
+          Mostrar contraseña
+        </div>
+      </div>
+      <br><br>
+      <input class="buttons" type="submit" name="" value="Iniciar sesión">
+    </section>
+  </form>
+
+  <div class="autor">
+    © 2022 Formulario Login. Todos los derechos reservados | Diseño de Isaac Saado
+  </div>
 </body>
 
 <script>
-  function verpassword(){
-      var tipo = document.getElementById("password");
-      if(tipo.type == "password")
-	  {
-          tipo.type = "text";
-      }
-	  else
-	  {
-          tipo.type = "password";
-      }
+  function verpassword() {
+    var tipo = document.getElementById("password");
+    if (tipo.type == "password") {
+      tipo.type = "text";
+    } else {
+      tipo.type = "password";
+    }
   }
 </script>
 
