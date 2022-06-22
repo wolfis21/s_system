@@ -39,7 +39,7 @@
     <label>Cliente: &nbsp&nbsp</label> 
     <select name="idCliente" >
             <?php foreach ($listare as $p): ?>
-                <option value="<?php echo $p['idCliente']?>"><?php echo $p['idCedula']."- ".$p['Nombre']." ".$p['Apellido']?></option>
+                <option value="<?php echo $p['idCliente']?>"selected><?php echo $p['idCedula']."- ".$p['Nombre']." ".$p['Apellido']?></option>
             <?php endforeach; ?>
     </select>
     </div>

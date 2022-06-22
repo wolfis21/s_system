@@ -45,7 +45,7 @@
     <label>Empleado Responsable: &nbsp&nbsp</label> 
     <select name="idEmpleado" >
             <?php foreach ($listare as $p): ?>
-                <option value="<?php echo $p['idEmpleado']?>"><?php echo $p['pNombre']." ".$p['pApellido']?></option>
+                <option value="<?php echo $p['idEmpleado']?> "selected><?php echo $p['pNombre']." ".$p['pApellido']?></option>
             <?php endforeach; ?>
     </select>
     </div>

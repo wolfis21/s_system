@@ -15,7 +15,7 @@
     <label>Confirmacion de Equipo es: &nbsp&nbsp</label> 
     <select name="idEquipo" >
             <?php foreach ($listare as $p): ?>
-                <option value="<?php echo $p['idEquipo']?>"><?php echo $p['idCodigo']." - ".$p['nombre_e']?></option>
+                <option value="<?php echo $p['idEquipo']?>"selected><?php echo $p['idCodigo']." - ".$p['nombre_e']?></option>
             <?php endforeach; ?>
     </select>
     </div>

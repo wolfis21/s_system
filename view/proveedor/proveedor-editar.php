@@ -34,7 +34,7 @@
     <th>ID_Empleado: &nbsp&nbsp </th>
     <select name="idEmpleado" >
             <?php foreach ($listare as $p): ?>
-                <option value="<?php echo $p['idEmpleado']?>"><?php echo $p['pNombre']?></option>
+                <option value="<?php echo $p['idEmpleado']?>" selected><?php echo $p['pNombre']." ".$p['pApellido']?></option>
             <?php endforeach; ?>
     </select>
     <div class="text-right">
