@@ -51,6 +51,9 @@
                 <a onclick="javascript:return confirm('¿Seguro de eliminar este registro?');" href="?c=Cliente&a=Eliminar&id=<?php echo $r->idCliente; ?>">Eliminar</a>
             </td> -->
             <!--agregar un btn que te direccione a agregar el equipo de una sola vez (implementar) -->
+            <td>
+            <a href="?c=Equipo&a=Crud">Agregar Equipo</a>
+            </td>
         </tr>
     <?php endforeach; ?>
     </tbody>

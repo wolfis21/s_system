@@ -34,8 +34,6 @@ class clienteController
         $asis = new Empleado();
 
         $listare = $asis->ListarEm();
-        // $datos['listare'] = $listare;
-        // $this->view->show_source('cliente-editar.php',$datos);
 
         if (isset($_REQUEST['idCliente'])) {
             $emple = $this->model->Obtener($_REQUEST['idCliente']);
