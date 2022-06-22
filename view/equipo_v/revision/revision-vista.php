@@ -17,6 +17,7 @@ $where = "";
 <table class="table table-striped">
     <thead>
         <tr>
+            <th>Serial/Codigo</th>
             <th style="width: 60px;">Nombre del Equipo</th>
             <th>Fecha revision</th>
             <th>Descripcion revision</th>
@@ -28,6 +29,7 @@ $where = "";
     <tbody>
     <?php foreach($this->model2->Buscar($where) as $r): ?>
         <tr>
+            <td><?php echo $r->idCodigo; ?></td>
             <td><?php echo $r->nombre_e; ?></td>
             <td><?php echo $r->fecha_rev;?></td>
             <td><?php echo $r->descrip_rev; ?></td>
